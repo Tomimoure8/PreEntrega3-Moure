@@ -1,3 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Honk&display=swap");
+@font-face {
+  font-family: GridiculousMax;
+  src: url(Fonts/GridiculousMax.ttf);
+}
+@font-face {
+  font-family: MADE TOMMY Regular_PERSONAL USE;
+  src: url(Fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
+}
+@font-face {
+  font-family: MADE TOMMY Medium Outline_PERSONAL USE;
+  src: url(Fonts/MADE\ TOMMY\ Medium\ Outline_PERSONAL\ USE.otf);
+}
+body {
+  background-color: black;
+}
 
+.grid-item1 {
+  border: solid yellow;
+  background-color: aquamarine;
+  margin: 1%;
+  padding: 5%;
+}
+.grid-item1:hover {
+  background-color: royalblue;
+  border: solid tomato;
+}
+
+.grid-header1 {
+  grid-area: header;
+}
+
+.grid-article1 {
+  grid-area: article;
+}
+
+.grid-main1 {
+  grid-area: main;
+}
+
+.grid-aside1 {
+  grid-area: aside;
+}
+
+ul {
+  list-style-type: none;
+}
+ul a {
+  text-decoration: none;
+  color: tomato;
+}
+ul a:hover {
+  color: yellow;
+}
+
+.grid-footer1 {
+  grid-area: footer;
+}
+
+.flex-conteiner {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+.flex-conteiner .flex-item {
+  font-family: gridiculousmax;
+  width: 20px;
+  height: 20px;
+  border: 5px yellow double;
+  padding: 10px;
+  margin: 15px;
+  background-color: tomato;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.flex-conteiner .flex-item:hover {
+  background-color: aquamarine;
+  border: tomato outset 3px;
+}
+
+h1, h3 {
+  font-family: gridiculousmax;
+}
+
+h2 {
+  font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 15, "SHLN" 50;
+}
+
+p, li {
+  font-family: MADE TOMMY Regular_PERSONAL USE;
+}
+p:hover, li:hover {
+  color: white;
+}
+
+.portafolio {
+  height: 350px;
+  margin-left: 1%;
+  border: groove 8px tomato;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .alpha {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-areas: "header header header" "article article article" "aside aside aside" "footer footer footer";
+    background-color: black;
+    grid-template-rows: repeat(4, minmax(min-content, max-content));
+  }
+}
+.alpha {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-areas: "header header header" "article article aside" "article article aside" "footer footer footer";
+  background-color: black;
+  grid-template-rows: repeat(4, minmax(min-content, max-content));
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .alpha {
+    grid-template-areas: "header header header" "article article article" "aside aside aside" "footer footer footer";
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .alpha {
+    grid-template-areas: "header header header" "article article article" "aside aside aside" "footer footer footer";
+  }
+}
+@media screen and (min-width: 1024px) {
+  .alpha {
+    grid-template-areas: "header header header" "article article aside" "article article aside" "footer footer footer";
+  }
+}
+.beta {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-areas: "header header header" "main main aside" "main main aside" "footer footer footer";
+  background-color: black;
+  grid-template-rows: repeat(4, minmax(min-content, max-content));
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .beta {
+    grid-template-areas: "header header header" "main main main" "aside aside aside" "footer footer footer";
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .beta {
+    grid-template-areas: "header header header" "main main main" "aside aside aside" "footer footer footer";
+  }
+}
+@media screen and (min-width: 1024px) {
+  .beta {
+    grid-template-areas: "header header header" "main main aside" "main main aside" "footer footer footer";
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */

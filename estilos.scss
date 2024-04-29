@@ -1,0 +1,141 @@
+//FUENTES INICIAN
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Honk&display=swap');
+@font-face {
+    font-family: GridiculousMax;
+    src: url(Fonts/GridiculousMax.ttf);
+}
+@font-face {
+    font-family: MADE TOMMY Regular_PERSONAL USE;
+    src: url(Fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
+}
+@font-face {
+    font-family: MADE TOMMY Medium Outline_PERSONAL USE;
+    src: url(Fonts/MADE\ TOMMY\ Medium\ Outline_PERSONAL\ USE.otf);
+}
+//FUENTES TERMINAN
+
+//VARIABLES INICIAN
+$color1: black;
+$color2: aquamarine;
+$color3: royalblue;
+$color4: tomato;
+$display: display;
+$flex-flow: flex-flow;
+$justify-content: justify-content;
+$list-style-type: list-style-type;
+$gridiculousmax: gridiculousmax;
+// VARIABLES TERMINAN
+
+body {
+    background-color: $color1;
+}
+.grid-item1 {
+    border: solid yellow;
+    background-color: $color2;
+    margin: 1%;
+    padding: 5%;
+        &:hover {
+            background-color: $color3;
+            border: solid $color4;
+        }
+}
+.grid-header1 {
+    grid-area: header;
+}
+.grid-article1 {
+    grid-area: article;
+}
+.grid-main1 {
+    grid-area: main;
+}
+.grid-aside1 {
+    grid-area: aside;
+}
+ul {
+    list-style-type: none;
+        a {
+            text-decoration: none;
+            color: $color4;
+                &:hover {
+                    color: yellow;
+                }
+        }
+}
+.grid-footer1 {
+    grid-area: footer;
+}
+@mixin flex-conteiner ($display, $flex-flow, $justify-content, $list-style-type) {
+    display: $display;
+    flex-flow: $flex-flow;
+    justify-content: $justify-content;
+    list-style-type: $list-style-type;
+}
+.flex-conteiner {
+    @include flex-conteiner (flex, row wrap, center, none);
+        .flex-item {
+            font-family: $gridiculousmax;
+            width: 20px;
+            height: 20px;
+            border: 5px yellow double;
+            padding: 10px;
+            margin: 15px;
+            background-color: $color4;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+                &:hover {
+                    background-color: $color2;
+                    border: $color4 outset 3px;
+                }
+        }
+}
+h1 {
+    font-family: $gridiculousmax
+}
+h2 {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h3 {
+    @extend h1
+}
+h4 {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+p, li {
+    font-family: MADE TOMMY Regular_PERSONAL USE;
+        &:hover {
+            color: white;
+        }
+}
+.portafolio {
+    height: 350px;
+    margin-left: 1%;
+    border: groove 8px $color4;
+}
+@media screen and (min-width:320px) and (max-width:600px) {
+    .alpha {
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-areas:
+        "header header header"
+        "article article article"
+        "aside aside aside"
+        "footer footer footer";
+        background-color: $color1;
+        grid-template-rows: repeat(4, minmax(min-content,max-content)); 
+    }
+}
+
+// @IMPORTS INICIAN
+@import "_alpha";
+@import "_beta";
+// @IMPORTS TERMINAN

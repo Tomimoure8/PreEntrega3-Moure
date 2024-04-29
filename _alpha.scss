@@ -1,0 +1,40 @@
+$color1: black;
+.alpha {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-areas:
+    "header header header"
+    "article article aside"
+    "article article aside"
+    "footer footer footer";
+    background-color: $color1;
+    grid-template-rows: repeat(4, minmax(min-content,max-content)); 
+}
+@media screen and (min-width:600px) and (max-width:1024px) {
+    .alpha {
+        grid-template-areas:
+        "header header header"
+        "article article article"
+        "aside aside aside"
+        "footer footer footer";
+    }
+}
+@media screen and (min-width:320px) and (max-width:600px) {
+    .alpha {
+        grid-template-areas:
+        "header header header"
+        "article article article"
+        "aside aside aside"
+        "footer footer footer";
+    }
+}
+@media screen and (min-width:1024px) {
+    .alpha {
+        grid-template-areas:
+        "header header header"
+        "article article aside"
+        "article article aside"
+        "footer footer footer";
+    }
+}
