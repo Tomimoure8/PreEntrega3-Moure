@@ -16,29 +16,27 @@
 //FUENTES TERMINAN
 
 //VARIABLES INICIAN
-$color1: black;
-$color2: aquamarine;
+$color1: rgb(37, 37, 37);
+$color2: midnightblue;
 $color3: royalblue;
 $color4: tomato;
+$color5: dodgerblue;
 $display: display;
 $flex-flow: flex-flow;
 $justify-content: justify-content;
+$align-content: align-content;
 $list-style-type: list-style-type;
 $gridiculousmax: gridiculousmax;
 // VARIABLES TERMINAN
 
 body {
-    background-color: $color1;
+    background-color: $color2;
 }
 .grid-item1 {
-    border: solid yellow;
-    background-color: $color2;
+    border-radius: 20px;
+    background-color: $color3;
     margin: 1%;
     padding: 5%;
-        &:hover {
-            background-color: $color3;
-            border: solid $color4;
-        }
 }
 .grid-header1 {
     grid-area: header;
@@ -65,30 +63,15 @@ ul {
 .grid-footer1 {
     grid-area: footer;
 }
-@mixin flex-conteiner ($display, $flex-flow, $justify-content, $list-style-type) {
-    display: $display;
-    flex-flow: $flex-flow;
-    justify-content: $justify-content;
-    list-style-type: $list-style-type;
+//header inicia
+.nav-item {
+    &:hover {
+        background-color: white;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
 }
-.flex-conteiner {
-    @include flex-conteiner (flex, row wrap, center, none);
-        .flex-item {
-            font-family: $gridiculousmax;
-            width: 20px;
-            height: 20px;
-            border: 5px yellow double;
-            padding: 10px;
-            margin: 15px;
-            background-color: $color4;
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-                &:hover {
-                    background-color: $color2;
-                    border: $color4 outset 3px;
-                }
-        }
-}
+//header termina 
 h1 {
     font-family: $gridiculousmax
 }
@@ -109,6 +92,11 @@ h4 {
     "MORF" 15,
     "SHLN" 50;
 }
+h5 {
+    &:hover {
+        color: yellow;
+    }
+}
 p, li {
     font-family: MADE TOMMY Regular_PERSONAL USE;
         &:hover {
@@ -120,20 +108,9 @@ p, li {
     margin-left: 1%;
     border: groove 8px $color4;
 }
-@media screen and (min-width:320px) and (max-width:600px) {
-    .alpha {
-        display: grid;
-        height: 100%;
-        width: 100%;
-        grid-template-areas:
-        "header header header"
-        "article article article"
-        "aside aside aside"
-        "footer footer footer";
-        background-color: $color1;
-        grid-template-rows: repeat(4, minmax(min-content,max-content)); 
-    }
-}
+// IMAGENES INICIA
+
+// IMAGENES TERMINA
 
 // @IMPORTS INICIAN
 @import "_alpha";
