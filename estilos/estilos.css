@@ -2,15 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Honk&display=swap");
 @font-face {
   font-family: GridiculousMax;
-  src: url(Fonts/GridiculousMax.ttf);
+  src: url(../Fonts/GridiculousMax.ttf);
 }
 @font-face {
   font-family: MADE TOMMY Regular_PERSONAL USE;
-  src: url(Fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
+  src: url(../Fonts/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
 }
 @font-face {
   font-family: MADE TOMMY Medium Outline_PERSONAL USE;
-  src: url(Fonts/MADE\ TOMMY\ Medium\ Outline_PERSONAL\ USE.otf);
+  src: url(../Fonts/MADE\ TOMMY\ Medium\ Outline_PERSONAL\ USE.otf);
 }
 body {
   background-color: midnightblue;
@@ -41,7 +41,6 @@ body {
 
 ul {
   list-style-type: none;
-  
 }
 ul a {
   text-decoration: none;
@@ -77,6 +76,10 @@ h4 {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "MORF" 15, "SHLN" 50;
+}
+
+h5:hover {
+  color: yellow;
 }
 
 p, li {
