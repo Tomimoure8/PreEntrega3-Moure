@@ -13,12 +13,12 @@
   src: url(../Fonts/MADE\ TOMMY\ Medium\ Outline_PERSONAL\ USE.otf);
 }
 body {
-  background-color: midnightblue;
+  background-color: skyblue;
 }
 
 .grid-item1 {
   border-radius: 20px;
-  background-color: royalblue;
+  background-color: paleturquoise;
   margin: 1%;
   padding: 5%;
 }
@@ -55,7 +55,7 @@ ul a:hover {
 }
 
 .nav-item:hover {
-  background-color: white;
+  background-color: dodgerblue;
   border-radius: 5px;
   padding-left: 5px;
 }
@@ -86,7 +86,7 @@ p, li {
   font-family: MADE TOMMY Regular_PERSONAL USE;
 }
 p:hover, li:hover {
-  color: white;
+  color: darkgoldenrod;
 }
 
 .portafolio {
