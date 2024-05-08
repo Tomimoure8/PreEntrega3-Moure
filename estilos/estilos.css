@@ -44,7 +44,7 @@ ul {
 }
 ul a {
   text-decoration: none;
-  color: tomato;
+  color: red;
 }
 ul a:hover {
   color: yellow;
@@ -92,7 +92,7 @@ p:hover, li:hover {
 .portafolio {
   height: 350px;
   margin-left: 1%;
-  border: groove 8px tomato;
+  border: groove 8px red;
 }
 
 .alpha {
