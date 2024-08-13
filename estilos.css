@@ -96,7 +96,7 @@ p:hover, li:hover {
   display: grid;
   height: 100%;
   width: 100%;
-  grid-template-areas: "header header header" "article article article" "asidee aside aside" "footer footer footer";
+  grid-template-areas: "header header header" "article article article" "aside aside aside" "footer footer footer";
   grid-template-rows: repeat(4, minmax(min-content, max-content));
 }
 

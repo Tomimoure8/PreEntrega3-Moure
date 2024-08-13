@@ -36,19 +36,24 @@ body {
     border-radius: 20px;
     background-color: $color3;
     margin: 1%;
-    padding: 5%;
+    box-sizing: border-box;
+    padding: 3%;
 }
 .grid-header1 {
     grid-area: header;
+    width: 100%;
 }
 .grid-article1 {
     grid-area: article;
+    width: 100%;
 }
 .grid-main1 {
     grid-area: main;
+    width: 100%;
 }
 .grid-aside1 {
     grid-area: aside;
+    width: 100%;
 }
 ul {
     list-style-type: none;
@@ -62,6 +67,7 @@ ul {
 }
 .grid-footer1 {
     grid-area: footer;
+    width: 100%;
 }
 //header inicia
 .nav-item {

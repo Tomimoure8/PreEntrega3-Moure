@@ -6,7 +6,7 @@ $color1: black;
     grid-template-areas:
     "header header header"
     "article article article"
-    "asidee aside aside"
+    "aside aside aside"
     "footer footer footer";
     grid-template-rows: repeat(4, minmax(min-content,max-content)); 
 }

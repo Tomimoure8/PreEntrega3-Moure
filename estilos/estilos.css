@@ -19,8 +19,9 @@ body {
 .grid-item1 {
   border-radius: 20px;
   background-color: paleturquoise;
+  box-sizing: border-box;
   margin: 1%;
-  padding: 5%;
+  padding: 3%;
 }
 
 .grid-header1 {
